@@ -9,7 +9,7 @@ pipeline {
 
     stage('Install') {
       steps {
-        sh 'apt update'
+        sh 'sudo apt update'
       }
     }
 
