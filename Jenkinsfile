@@ -1,19 +1,11 @@
 pipeline {
-  agent {
-    node {
-      label 'node:lts-alpine'
-    }
-
-  }
+  agent any
   stages {
     stage('Build') {
       steps {
-        sh 'yum install'
+        git(url: 'https://github.com/Trunkzs/creating-a-pipeline-in-blue-ocean', branch: 'master')
       }
     }
 
-  }
-  environment {
-    docker = ''
   }
 }
