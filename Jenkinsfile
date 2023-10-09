@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Install') {
+      steps {
+        sh 'yum install'
+      }
+    }
+
   }
 }
