@@ -9,7 +9,7 @@ pipeline {
 
     stage('Install') {
       steps {
-        sh 'ls -l'
+        sh 'yum update'
       }
     }
 
